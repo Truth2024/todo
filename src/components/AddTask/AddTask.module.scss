@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.button {
+	align-items: center;
+	background-color: #6c63ff;
+	border: 2px solid #6c63ff;
+	border-radius: 50%;
+	bottom: 32px;
+	box-shadow: 0 0 4px 0 #6c63ff;
+	color: #f7f7f7;
+	display: flex;
+	font-family: Kanit;
+	font-size: 18px;
+	font-weight: 500;
+	height: 50px;
+	justify-content: center;
+	position: fixed;
+	right: calc(50vw - 372px);
+	text-transform: uppercase;
+	transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+	width: 50px;
+	z-index: 99;
+}

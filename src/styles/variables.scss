@@ -1,0 +1,13 @@
+:root {
+	--color-bg: #f7f7f7;
+	--text-bg:#252525;
+	--white: #f7f7f7;
+	--black: #252525;
+	--font-main: 'Play';
+	--purple: #6c63ff;
+}
+
+[data-theme="dark"] {
+	--color-bg: #252525;
+	--text-bg:#f7f7f7;
+}

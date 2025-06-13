@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+
+.header__logo {
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-size: 26px;
+	color: var(--text-bg);
+
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	padding-top: 45px;
+}
+
+.input {
+	border: 1px solid var(--purple);
+	border-radius: 5px;
+	padding: 8px 16px;
+	width: 595px;
+	height: 38px;
+	background-color: var(--color-bg);
+
+	&:focus {
+		border-color: #4a43cc;
+		box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.25);
+		outline: none;
+	}
+}
+
+
+.input::placeholder {
+	font-family: var(--font-main);
+	font-size: 18px;
+	color: #888;
+}
+
+.select {
+	border-radius: 5px;
+	padding: 10px;
+	width: 100px;
+	height: 38px;
+	background: var(--purple);
+	outline: none;
+	color: var(--white);
+	/* чтобы текст был белый */
+	appearance: none;
+	/* убрать стандартную стрелочку */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='25' viewBox='0 0 24 24' width='25' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+	background-repeat: no-repeat;
+	background-position: right 0px center;
+	background-size: 25px;
+	cursor: pointer;
+
+	option {
+		background: var(--white);
+		color: black;
+	}
+}
+
+.theme__button {
+	border-radius: 5px;
+	width: 38px;
+	height: 38px;
+	background: var(--purple);
+}
